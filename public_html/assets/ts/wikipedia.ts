@@ -41,7 +41,7 @@ function buildRandom(title: string, id: number, header: string, other: any){
         let cur = to_parse[i].toLowerCase();
         let ok = true;
         for(let j = 0; j < to_remove.length; j++){
-            if(to_remove[j] == cur){
+            if(to_remove[j].replace(/[^a-zA-Z ]/g, "") == cur.replace(/[^a-zA-Z ]/g, "")){
                 ok = false;
                 break;
             }
