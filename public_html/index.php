@@ -77,7 +77,7 @@ $hasGmap = true;
 <div class="row">
 
     <div class="row text-center header">
-        Whatapedia
+        Whathepedia
     </div>
 
     <div class="row mainRow" id="fade">
