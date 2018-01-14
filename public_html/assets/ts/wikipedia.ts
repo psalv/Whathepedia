@@ -10,14 +10,14 @@ function loadRandom (callback) {
     let wiki_header: string = "";
     let wiki_other = null;
 
-    let url = "https://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=4&rnnamespace=0&rvprop=content&format=json&callback=?";
+    let url = "//en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=4&rnnamespace=0&rvprop=content&format=json&callback=?";
     $.getJSON(url, function(data) {
 
         wiki_title = data.query.random[0].title;
         wiki_id = data.query.random[0].id;
 
         wiki_other = [wiki_title, data.query.random[1].title, data.query.random[2].title, data.query.random[3].title];
-        url = "http://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&exintro&callback=?&pageids=" + wiki_id;
+        url = "//en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&exintro&callback=?&pageids=" + wiki_id;
 
         $.getJSON(url, function(data) {
             wiki_header = data.query.pages[wiki_id].extract;
