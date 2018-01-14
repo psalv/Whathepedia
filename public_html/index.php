@@ -92,18 +92,17 @@ $hasGmap = true;
     </div>
 </div>
 
-<div class="row fullWidth text-center">
-    <div class="row fullWidth text-center hidden" id="options">
-        <div class="row fullWidth text-center">
-            <div class="col-xs-6 option"></div>
-            <div class="col-xs-6 option"></div>
-        </div>
-        <div class="row fullWidth text-center">
-            <div class="col-xs-6 option"></div>
-            <div class="col-xs-6 option"></div>
-        </div>
+<div class="row fullWidth text-center hidden" id="options">
+    <div class="row fullWidth text-center">
+        <div class="col-xs-6 left option"></div>
+        <div class="col-xs-6 right option"></div>
+    </div>
+    <div class="row fullWidth text-center">
+        <div class="col-xs-6 left option"></div>
+        <div class="col-xs-6 right option"></div>
     </div>
 </div>
+
 <!--=========================================== JS SCRIPTS ==========================================-->
 
 <!-- jQuery -->
