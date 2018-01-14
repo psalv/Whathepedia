@@ -46,7 +46,6 @@ function buildRandom(title, id, header, other) {
     var order = [];
     while (order.length < 4) {
         var cur = Math.floor(Math.random() * 4);
-        console.log(cur);
         if (remaining[cur] != -1) {
             remaining[cur] = -1;
             order.push(other[cur]);
