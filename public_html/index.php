@@ -7,15 +7,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Whatapedia">
+    <meta name="description" content="Whathepedia">
     <meta name="author" content="Paul Salvatore">
 
-    <meta property="og:title" content="Whatapedia" />
-    <meta property="og:site_name" content="Whatapedia" />
+    <meta property="og:title" content="Whathepedia" />
+    <meta property="og:site_name" content="Whathepedia" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://whatapedia.com" />
-    <meta property="og:description" content="Wikipedia trivia" />
-    <title>Whatapedia</title>
+    <meta property="og:url" content="http://whathepedia.com" />
+    <meta property="og:description" content="Testing your intuition" />
+    <title>Whathepedia</title>
 
     <!-- Favicons
     ================================================== -->
