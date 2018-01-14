@@ -1,5 +1,7 @@
 
+
 let CUR_ANSWER = null;
+
 
 function loadRandom (callback) {
 
@@ -27,6 +29,7 @@ function loadRandom (callback) {
         });
     });
 }
+
 
 function buildRandom(title: string, id: number, header: string, other: any){
     CUR_ANSWER = title;
@@ -81,15 +84,23 @@ function buildRandom(title: string, id: number, header: string, other: any){
 
 }
 
+
 $('#start').on('click', function () {
    loadRandom(buildRandom);
 });
+
+
+$('.header').on('click', function () {
+   loadRandom(buildRandom);
+});
+
 
 $('body').on('keydown', function (e) {
     if((e.which || e.keyCode) == 32){
         loadRandom(buildRandom);
     }
 });
+
 
 $(".option").on('click', function (this) {
     let cur = this.innerHTML;

@@ -64,6 +64,9 @@ function buildRandom(title, id, header, other) {
 $('#start').on('click', function () {
     loadRandom(buildRandom);
 });
+$('.header').on('click', function () {
+    loadRandom(buildRandom);
+});
 $('body').on('keydown', function (e) {
     if ((e.which || e.keyCode) == 32) {
         loadRandom(buildRandom);
