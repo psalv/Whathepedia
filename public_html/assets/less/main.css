@@ -1,0 +1,56 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden !important;
+}
+.centerContainer {
+  display: table;
+  height: 100%;
+}
+.centerElement {
+  display: table-cell;
+  vertical-align: middle;
+}
+.fullWidth {
+  width: 100%;
+}
+.size2 {
+  font-size: 1.5em;
+}
+.header {
+  font-family: 'Crimson Text', serif !important;
+  font-size: 2em;
+  padding: 35px;
+}
+.mainRow {
+  height: 60vh !important;
+}
+.mainRow .col-xs-4 {
+  height: inherit;
+}
+.mainRow .contentColumn {
+  overflow-y: scroll;
+}
+.col-xs-6 {
+  padding-top: 12px;
+  width: 40%;
+  height: 45px;
+  margin: 1%;
+  background-color: #448AFF;
+  color: white;
+}
+.option {
+  cursor: pointer;
+}
+.fa-wikipedia-w {
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  color: #2196F3 !important;
+}
+#start {
+  cursor: pointer;
+}
+#new {
+  cursor: pointer;
+  color: #2196F3;
+}
