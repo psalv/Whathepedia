@@ -39,9 +39,24 @@
   color: white;
   margin-top: 10px;
 }
+@media (max-width: 700px) {
+  .col-xs-6 {
+    height: 90px;
+  }
+}
 .left {
   margin-left: 11%;
   margin-right: 1%;
+}
+@media (max-width: 700px) {
+  .left {
+    margin-left: 17%;
+  }
+}
+@media (max-width: 500px) {
+  .left {
+    margin-left: 17%;
+  }
 }
 .right {
   margin-left: 1%;

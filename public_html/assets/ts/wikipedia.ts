@@ -104,6 +104,12 @@ $('body').on('keydown', function (e) {
 
 $(".option").on('click', function (this) {
     let cur = this.innerHTML;
+
+    if(this.style.backgroundColor != 'rgb(68, 138, 255)'){
+        loadRandom(buildRandom);
+        return;
+    }
+
     let options = $('.option');
     for(let i = 0; i < options.length; i++){
         if(options[i].innerHTML == cur){

@@ -74,6 +74,10 @@ $('body').on('keydown', function (e) {
 });
 $(".option").on('click', function () {
     var cur = this.innerHTML;
+    if (this.style.backgroundColor != 'rgb(68, 138, 255)') {
+        loadRandom(buildRandom);
+        return;
+    }
     var options = $('.option');
     for (var i = 0; i < options.length; i++) {
         if (options[i].innerHTML == cur) {
