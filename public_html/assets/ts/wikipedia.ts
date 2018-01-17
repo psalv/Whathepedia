@@ -68,11 +68,14 @@ function buildRandom(title: string, id: number, header: string, other: any){
         }
     }
 
-    $('#content').fadeIn(300);
 
 
-    $("#content").html(to_display + "<a href=\"\" id=\"page\" target=\"_blank\"><i class=\"fa fa-2x fa-wikipedia-w\"></i></a>\n");
-    $('#page').attr("href", "//en.wikipedia.org/?curid=" + id);
+    $('#content').promise().done(()=>{
+        $("#content").html(to_display + "<a href=\"\" id=\"page\" target=\"_blank\"><i class=\"fa fa-2x fa-wikipedia-w\"></i></a>\n");
+        $('#content').fadeIn(300);
+        $('#page').attr("href", "//en.wikipedia.org/?curid=" + id);
+    });
+
 
     let options = $('.option');
     for(let i = 0; i < 4; i++){

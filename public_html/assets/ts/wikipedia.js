@@ -51,9 +51,11 @@ function buildRandom(title, id, header, other) {
             order.push(other[cur]);
         }
     }
-    $('#content').fadeIn(300);
-    $("#content").html(to_display + "<a href=\"\" id=\"page\" target=\"_blank\"><i class=\"fa fa-2x fa-wikipedia-w\"></i></a>\n");
-    $('#page').attr("href", "//en.wikipedia.org/?curid=" + id);
+    $('#content').promise().done(function () {
+        $("#content").html(to_display + "<a href=\"\" id=\"page\" target=\"_blank\"><i class=\"fa fa-2x fa-wikipedia-w\"></i></a>\n");
+        $('#content').fadeIn(300);
+        $('#page').attr("href", "//en.wikipedia.org/?curid=" + id);
+    });
     var options = $('.option');
     for (var i = 0; i < 4; i++) {
         options[i].innerHTML = order[i];
